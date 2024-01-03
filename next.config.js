@@ -1,4 +1,18 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        hostname: "s.gravatar.com",
+      },
+      {
+        hostname: "lh3.googleusercontent.com",
+      },
+      {
+        hostname: "platform-lookaside.fbsbx.com",
+      },
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
